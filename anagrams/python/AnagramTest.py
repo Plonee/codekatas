@@ -8,6 +8,8 @@ class TestAnagram(unittest.TestCase):
     def setUp(self):
         self.anagram = Anagram('something')
 
-    def test_upper(self):
-        self.assertEqual(1,1)
+    def test_innerText(self):
+        self.assertEqual(self.anagram.inner_text, 'something')
 
+    def test_repr(self):
+        self.assertEqual(self.anagram.__repr__(), 'inner: something')
