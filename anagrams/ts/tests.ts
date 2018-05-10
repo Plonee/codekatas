@@ -8,3 +8,11 @@ test('should get the name right', t => {
   t.equal(anagram.innerText, expected)
   t.end()
 })
+
+
+test('should innerTexts equal', t => {
+  const anagram = new Anagram('oh, hi Mark')
+  const anagramCopy = new Anagram('oh, hi Mark')
+  t.equal(anagram.innerText, anagramCopy.innerText)
+  t.end()
+})
