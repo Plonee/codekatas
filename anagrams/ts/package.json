@@ -1,0 +1,14 @@
+{
+  "name": "anagrams",
+  "version": "1.0.0",
+  "description": "anagrams kata",
+  "main": "index.js",
+  "scripts": {
+    "test": "tests.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tape": "^4.9.0"
+  }
+}
