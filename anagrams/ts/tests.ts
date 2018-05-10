@@ -1,8 +1,10 @@
 import { test } from 'tape';
+import { Anagram } from './anagram';
 
-test('one equals one', t => {
-  const req = 1;
-  const xpected = 0 + 1;
-  t.equal(1, 1);
-  t.end();
-});
+
+test('should get the name right', t => {
+  const anagram = new Anagram('hi')
+  const expected = 'hi'
+  t.equal(anagram.innerText, expected)
+  t.end()
+})
